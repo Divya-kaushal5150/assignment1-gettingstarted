@@ -1,35 +1,37 @@
-### welcome_assignment_answers
-### Input - All nine questions given in the assignment.
-### Output - The right answer for the specific question.
+# Example Question 1: Is the Earth flat? - Yes/No
+answer1 = input("Is the Earth flat? (Yes/No): ")
 
-def welcome_assignment_answers(question):
-    #Students do not have to follow the skeleton for this assignment.
-    #Another way to implement is using a "case" statements similar to C.
-    if question == "Are encoding and encryption the same? - Yes/No":
-        answer = "The student should type the answer here"
-    elif question == "Is it possible to decrypt a message without a key? - Yes/No":
-        answer = "The student should type the answer here"
-    else: 
-        ### you should understand why this else case should be included
-        ### what happens if there is a typo in one of the questions?
-        ### maybe put something here to flag an issue and catch errors
-        answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
-    return(answer)
-# Complete all the questions.
+if answer1.lower() == "yes":
+    result1 = "Incorrect"
+else:
+    result1 = "Correct"
 
+# Example Question 2: Is water boiling at 100°C? - Yes/No
+answer2 = input("Is water boiling at 100°C? (Yes/No): ")
 
-if __name__ == "__main__":
-    #use this space to debug and verify that the program works
-    debug_question = "Are encoding and encryption the same? - Yes/No"
-    print(welcome_assignment_answers(debug_question))
+if answer2.lower() == "yes":
+    result2 = "Correct"
+else:
+    result2 = "Incorrect"
 
-#Questions:
-#"In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?":
-#"Are encoding and encryption the same? - Yes/No":
-#"Is it possible to decrypt a message without a key? - Yes/No":
-#"Is it possible to decode a message without a key? - Yes/No":
-#"Is a hashed message supposed to be un-hashed? - Yes/No":
-#"What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
-#"Is MD5 a secured hashing algorithm? - Yes/No":
-#"What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-#"What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
+# Example Question 3: How many hours are in a day? - Numeric Answer
+answer3 = int(input("How many hours are in a day? (Number): "))
+
+if answer3 == 24:
+    result3 = True  # True if the answer is correct
+else:
+    result3 = False  # False if the answer is incorrect
+
+# Example Question 4: What is 5 + 5? - Numeric Answer
+answer4 = int(input("What is 5 + 5? (Number): "))
+
+if answer4 == 10:
+    result4 = "Correct"
+else:
+    result4 = "Incorrect"
+
+# Printing out results
+print(f"Question 1 Answer: {result1}")
+print(f"Question 2 Answer: {result2}")
+print(f"Question 3 Answer: {result3}")
+print(f"Question 4 Answer: {result4}")
