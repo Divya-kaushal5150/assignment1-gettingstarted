@@ -31,11 +31,11 @@ def welcome_assignment_answers(question):
 
     #question7    
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
-        answer = "Yes"
+        answer = "No"
 
     #question8    
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-        answer = 4
+        answer = 2
 
     #question9    
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
