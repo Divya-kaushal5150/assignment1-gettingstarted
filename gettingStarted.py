@@ -18,8 +18,8 @@ def welcome_assignment_answers(question):
         answer = "No"
 
     #question4  
-    elif question == "Is it possible to decode a message without a key? - Yes/No":
-        answer = "Yes"
+    elif question == "Is it possible to decode a message without a key?- Yes/No":
+        answer = "No"
 
     #question5    
     elif question == "Is a hashed message supposed to be un-hashed? - Yes/No":
@@ -35,7 +35,7 @@ def welcome_assignment_answers(question):
 
     #question8    
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-        answer = 2
+        answer = 1
 
     #question9    
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
